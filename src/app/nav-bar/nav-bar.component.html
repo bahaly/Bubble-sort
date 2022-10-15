@@ -1,0 +1,9 @@
+<div class="container" [ngStyle]="{'background-color': backgroundColor}">
+
+  <div (click)="startShorting()" class="start">Start</div>
+
+  <div class="title"> BuBBle Sort Visualizer </div>
+
+  <div class="slider" (click)="ChangeSize(slider.value)"><input #slider type="range" min="3" value="25" max="70" ></div>
+
+</div>

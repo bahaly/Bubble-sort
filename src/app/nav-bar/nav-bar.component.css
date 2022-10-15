@@ -1,0 +1,22 @@
+.container{
+  padding: 5px 15px 15px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title{
+  font-size: larger;
+  margin-top: auto;
+}
+
+.slider{
+  cursor: pointer;
+}
+
+.start{
+  padding: 7px;
+  background-color: rgb(4, 144, 238);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

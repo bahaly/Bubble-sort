@@ -1,5 +1,4 @@
 # BuBBle Sort visualizer
-![image](https://user-images.githubusercontent.com/50265605/195990653-542ca00f-51e7-4524-9f1d-5b945c77adf4.png)
 
 this project use typescript and angular. I have doing a bubble sort algorithme visualizer.
 

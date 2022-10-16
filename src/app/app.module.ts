@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { VisualizerComponent } from './visualizer/visualizer.component';
+import { ArrayVisualizerComponent } from './array-visualizer/array-visualizer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    VisualizerComponent
+    VisualizerComponent,
+    ArrayVisualizerComponent
   ],
   imports: [
     BrowserModule,

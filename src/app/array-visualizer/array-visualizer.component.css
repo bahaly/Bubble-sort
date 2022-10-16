@@ -1,0 +1,90 @@
+.box{
+  width: 35px;
+  min-width: 30px;
+  height: 35px;
+  margin-left: 2px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  background-color: rgb(44, 44, 208);
+  transition: background-color 0.5s,
+}
+
+.boxContainer{
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.step{
+  text-align: center;
+  margin-top: 30px;
+}
+.d-flex{
+  display: flex;
+}
+.swap{
+  width: 70px;
+  margin: auto;
+}
+.m-auto{
+  margin: auto;
+}
+.msg-box{
+  background-color: rgba(51, 72, 180, 0.537);
+  color: white;
+  text-align: center;
+  font-size: larger;
+  max-width: 400px;
+  padding: 7px;
+}
+canvas{
+  width: 100%;
+  height: 130px;
+}
+img{
+  width: 60px;
+}
+.active{
+  /*   color: #3b82f6;
+   */  color: #fbfbfb;
+    background-color: #3b82f6d9;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-name: slide_left;
+  }
+  .active2{
+    /*   color: #3b82f6;
+     */  color: #fbfbfb;
+      background-color: #3b82f6d9;
+
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-name: slide_right;
+  }
+  .rounded-sp{
+    border-radius: 18px;
+  }
+  @keyframes slide_right {
+    from {
+      position: relative;
+      left: -30px;
+    }
+
+    to {
+      position: block;
+      left: 0;
+    }
+  }
+  @keyframes slide_left {
+    from {
+      position: relative;
+      right: -30px;
+    }
+
+    to {
+      position: block;
+      right: 0;
+    }
+  }

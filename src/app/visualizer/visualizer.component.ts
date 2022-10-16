@@ -11,8 +11,9 @@ export class VisualizerComponent {
   COLOR = '#0490EE';
   COLOR_ON_MOVE = 'yellow';
   SWAP = 0;
-  ANIMATION_SPEED_MS = 10;
+  ANIMATION_SPEED_MS = 500;
   NUMBER_ELEMENTS = 25;
+  STEP = 0
   animations : any[] = [];
   array : Array<number> = []
 
@@ -27,6 +28,8 @@ export class VisualizerComponent {
 
 
   createArray(){
+    this.STEP = 0
+    this.SWAP = 0
     const array :Array<number> = []
     for (let i = 0; i < this.NUMBER_ELEMENTS; i++) {
       array.push(this.randomIntFromInterval(5, 730));
@@ -71,11 +74,10 @@ export class VisualizerComponent {
           let barTwoStyle = <HTMLElement>box[v3];
           //doing a swap of box with changement of text
           setTimeout(() => {
-            barOneStyle.style.height = `${v2}px`;
             barOneStyle.textContent = `${v2}`;
-            barTwoStyle.style.height = `${v4}px`;
             barOneStyle.textContent = `${v4}`;
             this.SWAP++;
+            this.STEP =  Math.floor((this.SWAP / this.array.length)) + 1
            }, i * this.ANIMATION_SPEED_MS);
         }
       }

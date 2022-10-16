@@ -1,0 +1,22 @@
+<div>
+  <div class="step">
+    STEP : {{STEP}} &nbsp;&nbsp; I = {{SWAP}}
+    <hr style="max-width: 300px;">
+ </div>
+
+
+  <div class="">
+    <div class="boxContainer">
+      <div class="box" *ngFor="let i of array;" [ngStyle]="{'background-color':COLOR}">
+        {{i}}
+      </div>
+    </div>
+    <canvas  #canvas></canvas>
+  </div>
+
+  <div>
+      <div class="msg-box m-auto">
+        {{label | uppercase}}
+      </div>
+  </div>
+</div>
